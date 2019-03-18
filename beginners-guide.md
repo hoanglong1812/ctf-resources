@@ -1,10 +1,8 @@
 # A beginner's guide to setting up for your first CTF
 
-The text of this guide is in the context of CTFs but could also be applied to other applications.
-
 
 ## Set up your computer
-Conventional wisdom says to set up a virtual machine on your computer. You could also boot off a USB, but it's more difficult.
+Conventional wisdom says to set up a virtual machine on your computer. You could also boot off a USB, but it's more difficult. You could even install it as your base OS but that is really, really, *really* **not** recommended.
 
 ### Virtual Machines 101
 Virtual machines (VMs) are like computers that run on your computer. They're helpful to us because it allows separation between the computer that you use for personal stuff and the computer where you install all of your hacking tools.
@@ -12,15 +10,13 @@ Virtual machines (VMs) are like computers that run on your computer. They're hel
 In VM talk, the OS that your computer is running normally is the "host" and the OS that runs on top of it is called the "guest".
 
 ### Installing Kali Linux
-A really popular OS for CTFing is Kali Linux. To run it, you'll need a virtual machine software and a Kali image. You can also install it as your base OS but this is not recommended.
-
-To do this: download a VM program ([Virtualbox](https://www.virtualbox.org/) and [VMWare Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html) are popular), then download a [Kali image](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/). 
-You'll want to get the one that works for the VM program - the .iso files may be difficult to set up
+A really popular way to CTF is using Kali Linux in a VM. To do this: download a VM program ([Virtualbox](https://www.virtualbox.org/) and [VMWare Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html) are popular), then download a [Kali image](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/). 
+You'll want to get the one that works for the VM program - the .iso files may be difficult to set up.
 
 ### Using your host machine 
 You can use your host machine for some things, even though it's not recommended. 
 
-You may want to install Burp (see below), but in that case make sure that the browser that you install the certificate on is not used for any other purpose - the certificate would allow Burp to identify any site for you.
+You may want to install [Burp Suite](https://portswigger.net/burp/communitydownload) (see below for more setup instructions), but in that case make sure that the browser that you install the certificate on is not used for any other purpose - the certificate would allow Burp to identify any site for you.
 
 Other tools to consider for your host are:
 + a Python IDE for scripting (I use [PyCharm](https://www.jetbrains.com/pycharm/) and [VS Code](https://code.visualstudio.com/)) and, if on Windows, [Git](https://www.atlassian.com/git/tutorials/install-git) (should be installed be default for Mac and Linux)
